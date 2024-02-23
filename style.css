@@ -8,6 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 70px;
 }
 h1{
     font-family: "anta", "roboto", "sans-serif";
@@ -18,14 +19,33 @@ h1{
     height: auto;
     padding-left: 20px;
 }
-header span {
-    width: 100px;
+#navbar-close{
+    display: none;
+}
+span::hover {
+    cursor: pointer;
+}
+nav {
+    position: absolute;
+    right: 6%;
+    top: 60px;
+    display: none;
+}
+nav li {
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: "anta", "roboto", "sans-serif";
+    font-size: 2.5em;
 }
 /*Main*/
 .title{
     font-family: "anta", "roboto", "sans-serif";
     font-size: 2em;
     margin-left: 20px;
+    margin-bottom: 50px;
 }
 #main-wrapper{
     display: flex;
@@ -42,11 +62,16 @@ main article {
     font-size: 32px;
     font-family: "roboto";
     font-weight: 500;
-    background-color: rgba(255, 255, 255, 0.2);
-    -webkit-backdrop-filter: blur(10px);
+    text-align: justify;
+}
+.glass {
+    background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    border-radius: 10%;
-    padding: 20px;
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px, solid, rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+    padding: 10px;
 }
 /*Aside*/
 #icon-wrapper{
@@ -58,10 +83,23 @@ main article {
 aside img {
     width: 50px;
 }
-#icon-wrapper img {
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
+    width: 5%;
+    padding: 20px;
     border-radius: 10%;
+}
+.icon-text img {
+    position: relative;
+    top: 30px;
+}
+.icon-text p {
+    font-family: "anta", "roboto", "sans-serif";
+    opacity: 0;
 }
 /*Section*/
 #section-wrapper{
