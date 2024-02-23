@@ -1,0 +1,144 @@
+/*Reset*/
+body{
+    margin: 0;
+    background-color: #0008ff;
+    background: linear-gradient(0deg, #0008ff 0%, #fa7000 35%, #c800ff 99%);
+    background-repeat: no-repeat;
+}
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+h1{
+    font-family: "anta", "roboto", "sans-serif";
+    font-size: 60px;
+}
+.logo{
+    width: 90px;
+    height: auto;
+    padding-left: 20px;
+}
+#navbar-close{
+    display: none;
+}
+span::hover {
+    cursor: pointer;
+}
+nav {
+    position: absolute;
+    right: 6%;
+    top: 60px;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-right: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+nav li {
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: "anta", "roboto", "sans-serif";
+    font-size: 2.5em;
+}
+.glass {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px, solid, rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+    padding: 10px;
+}
+/*Main*/
+.flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+#contact-image{
+    width: 90%;
+    height: auto;
+}
+main h2 {
+    font-family: "anta", "roboto", "sans-serif";
+    font-size: 3em;
+}
+main h3{
+    font-size: 2.5em;
+    font-family: "anta", "roboto", "sans-serif";
+}
+main h4{
+    font-size: 2em;
+    font-family: "anta", "roboto", "sans-serif";
+}
+.left img {
+    width: 80px;
+    height: auto;
+}
+.left {
+    width: 40%;
+}
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.right img {
+    width: 40%;
+}
+#social-media{
+    display: flex;
+    justify-content: space-around;
+}
+.icon{
+    filter: grayscale(1);
+}
+#facebook{
+    filter: drop-shadow(0px 5px 10px transparent) grayscale(1);
+}
+#facebook:hover{
+    filter: drop-shadow(0px 5px 10px #3ec8fe) grayscale(0);
+    transition: 0.5s;
+}
+#facebook:not(:hover){
+    filter: drop-shadow(0px 5px 10px transparent) grayscale(1);
+    transition: 0.5s;
+}
+#instagram{
+    filter: drop-shadow(0px 5px 10px transparent) grayscale(1);
+}
+#instagram:hover{
+    filter: drop-shadow(0px 5px 10px #ff0088) grayscale(0);
+    transition: 0.5s;
+}
+#instagram:not(:hover){
+    filter: drop-shadow(0px 5px 10px transparent) grayscale(1);
+    transition: 0.5s;
+}
+#linkedin{
+    filter: drop-shadow(0px 5px 10px transparent) grayscale(1);
+}
+#linkedin:hover{
+    filter: drop-shadow(0px 5px 10px #008cff) grayscale(0);
+    transition: 0.5s;
+}
+#linkedin:not(:hover){
+    filter: drop-shadow(0px 5px 10px transparent) grayscale(1);
+    transition: 0.5s;
+}
+#github{
+    filter: drop-shadow(0px 5px 10px transparent) grayscale(1);
+}
+#github:hover{
+    filter: drop-shadow(0px 5px 10px #d0faff) grayscale(0);
+    transition: 0.5s;
+}
