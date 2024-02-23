@@ -1,7 +1,9 @@
 /*Reset*/
 body{
     margin: 0;
-    background: linear-gradient(0deg, #0008ff 0%, #fa7000 35%, #c800ff 99%);
+    background: radial-gradient(#ffffff 0%, #000000 75%);
+    background-repeat: cover;
+    color: white;
 }
 /*Header*/
 header {
@@ -22,7 +24,7 @@ h1{
 #navbar-close{
     display: none;
 }
-span::hover {
+span:hover {
     cursor: pointer;
 }
 nav {
@@ -135,4 +137,40 @@ footer p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+/*Responsive for Phone*/
+@media screen and (max-width: 480px){
+    h1 {
+        font-size: medium;
+    }
+    .logo{
+        width: 15%;
+    }
+    .material-symbols-outlined{
+        font-size: 1px;
+    }
+    #main-wrapper{
+        display: block;
+    }
+    main article {
+        font-size: 12px;
+        margin-bottom: 20px;
+        width: 80%;
+        display: block;
+        margin: 10px auto;
+    }
+    header {
+        margin-bottom: 20px;
+    }
+    main img {
+        justify-content: center;
+    }
+    #picture{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #icon-wrapper{
+        flex-wrap:wrap;
+    }
 }

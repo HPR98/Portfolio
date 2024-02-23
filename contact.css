@@ -2,8 +2,9 @@
 body{
     margin: 0;
     background-color: #0008ff;
-    background: linear-gradient(0deg, #0008ff 0%, #fa7000 35%, #c800ff 99%);
+    background: radial-gradient(#ffffff 0%, #000000 75%);
     background-repeat: no-repeat;
+    color: white;
 }
 /*Header*/
 header {
